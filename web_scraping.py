@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-website_url = "https://www.geeksforgeeks.org/python-programming-language/"
+website_url = "https://meta.wikimedia.org/wiki/List_of_Wikipedias/Table"
 
 r = requests.get(website_url)
 #response = requests.get("https://realpython.com/python-requests")
@@ -20,7 +20,8 @@ soup = BeautifulSoup(r.content, 'html.parser')
 f = open(f"{name}.txt", "w")
 f.write (soup.prettify())
 
-
+f.read()")
+f.close()
 
 
 
